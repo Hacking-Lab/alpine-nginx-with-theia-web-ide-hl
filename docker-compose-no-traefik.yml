@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  alpine-nginx-with-theia-web-ide-hobo:
+    image: REGISTRY_BASE_URL/alpine-nginx-with-theia-web-ide:latest
+    hostname: 'hobo'
+    environment:
+      - "HL_USER_USERNAME=ttyoperator"
+      - "HL_USER_PASSWORD=compass"
+      - "HL_ROOT_PASSWORD=dQ0edEdD6dWZMJj"
+    env_file:
+      - ./UUID.env
+    volumes:
+      - ./UUID.gn:/goldnugget/UUID.gn
+    ports:
+      - 8000:80
