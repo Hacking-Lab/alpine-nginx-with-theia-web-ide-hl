@@ -2,8 +2,9 @@ version: '3.4'
 
 services:
   alpine-nginx-with-theia-web-ide-hobo:
-    image: REGISTRY_BASE_URL/alpine-nginx-with-theia-web-ide:latest
+    image: hackinglab/alpine-nginx-with-theia-web-ide:latest
     hostname: 'hobo'
+    user: root
     environment:
       - "HL_USER_USERNAME=ttyoperator"
       - "HL_USER_PASSWORD=compass"

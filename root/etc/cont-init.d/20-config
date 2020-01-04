@@ -27,12 +27,12 @@ sed -i "s#;error_log = log/php7/error.log.*#error_log = /config/log/php/error.lo
 sed -i "s#;log_level = notice#log_level = debug#g" /etc/php7/php-fpm.conf
 
 #fix php-fpm user
-sed -i "s#user = nobody.*#user = hacker#g" /etc/php7/php-fpm.d/www.conf
-sed -i "s#group = nobody.*#group = hacker#g" /etc/php7/php-fpm.d/www.conf
+sed -i "s#user = nobody.*#user = $HL_USER_USERNAME#g" /etc/php7/php-fpm.d/www.conf
+sed -i "s#group = nobody.*#group = $HL_USER_USERNAME#g" /etc/php7/php-fpm.d/www.conf
 
 
 # permissions
-chown -R hacker:hacker \
+chown -R $HL_USER_USERNAME:$HL_USER_USERNAME \
 	/config \
 	/run \
 	/var/lib/nginx \
