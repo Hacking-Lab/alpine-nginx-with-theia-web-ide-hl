@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+cd /home/theia
+exec /usr/local/bin/node /home/theia/src-gen/backend/main.js /home/project --hostname=127.0.0.1
+

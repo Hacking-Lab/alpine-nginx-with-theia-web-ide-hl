@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  editor:
+    image: hackinglab/alpine-nginx-with-theia-web-ide
+    user: root
+    labels:
+      - "traefik.port=80"
+      - "traefik.frontend.rule=Host:ide.idocker.hacking-lab.com"
+      - "traefik.protocol=http"

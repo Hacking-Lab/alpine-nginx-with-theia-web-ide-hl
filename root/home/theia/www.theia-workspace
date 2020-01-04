@@ -1,0 +1,13 @@
+{
+   "folders": [
+      {
+         "path": ""
+      },
+      {
+         "path": "file:///opt/www"
+      }
+   ],
+   "settings": {
+      "workbench.iconTheme": "theia-file-icons"
+   }
+}
