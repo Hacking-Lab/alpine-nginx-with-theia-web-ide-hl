@@ -41,4 +41,5 @@ chmod -R g+w \
 	/config/{nginx,www}
 chmod -R 644 /etc/logrotate.d
 
-
+# permissions /opt/www
+chown -R $HL_USER_USERNAME:$HL_USER_USERNAME /opt/www

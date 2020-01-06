@@ -2,9 +2,10 @@ version: '3.4'
 
 services:
   alpine-nginx-with-theia-web-ide-hobo:
-    image: REGISTRY_BASE_URL/alpine-nginx-with-theia-web-ide:latest
+    image: hackinglab/alpine-nginx-with-theia-web-ide:latest
     hostname: 'hobo'
+    user: root
     labels:
       - "traefik.port=80"
-      - "traefik.frontend.rule=Host:ide.idocker.hacking-lab.com"
+      - "traefik.frontend.rule=Host:e0.idocker.hacking-lab.com"
       - "traefik.protocol=http"

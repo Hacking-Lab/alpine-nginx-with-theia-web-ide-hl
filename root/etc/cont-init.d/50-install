@@ -7,3 +7,7 @@
 # copy fastcgi_params
 [[ ! -e /config/nginx/fastcgi_params ]] && \
         cp /defaults/fastcgi_params /config/nginx/fastcgi_params
+
+
+source /etc/hluser
+chown -R $HL_USER_USERNAME:$HL_USER_GROUPNAME /config/log/

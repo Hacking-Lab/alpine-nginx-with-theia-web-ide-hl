@@ -6,6 +6,8 @@ User root
 # Add the files
 ADD root /
 
+RUN chown -R 2000:2000 /home/theia
+
 # Add s6-overlay
 ENV S6_OVERLAY_VERSION=v1.22.1.0 \
     GO_DNSMASQ_VERSION=1.0.7
