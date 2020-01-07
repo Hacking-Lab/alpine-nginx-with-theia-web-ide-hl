@@ -3,9 +3,9 @@ This service provides features for the `attacker` in a `Hacking-Lab` training or
 
 
 
-## Your [Theia](/theia/#/home/theia/workspace.theia-workspace) 
+## Your <a href="/theia/#/home/theia/workspace.theia-workspace" target="_blank">Theia Web IDE</a>
 
-Please click on the `workspace` icon in the [Theia Web IDE](/theia/#/home/theia/workspace.theia-workspace) and you will have access to the files in `/opt/www` 
+Please click on the `workspace` icon in the <a href="/theia/#/home/theia/workspace.theia-workspace" target="_blank">Theia Web IDE</a> and edit the files in `/opt/www` 
 
 ![Theia](./img/theia1.png)
 
