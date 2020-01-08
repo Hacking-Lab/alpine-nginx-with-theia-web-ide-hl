@@ -25,12 +25,12 @@ And you will get a `shell` in your Theia editor
 ![Theia](./img/theia3.png)
 
 ## Hosting your own html, css, js, php code
-The NGINX web server on this `Hacker Station` comes with php support. The `DocumentRoot` of the nginx is configured to server files in the `/opt/www` folder. Please save your `html, css, js, php, ...` files in `/opt/www` and nginx/php will render your php files. Point your browser to [Your Files](./change_me.html)
+The NGINX web server on this `Hacker Station` comes with php support. The `DocumentRoot` of the nginx is configured to serve files in the `/opt/www` folder. Please save your `html, css, js, php, ...` files in `/opt/www` and nginx/php will render your php files. Point your browser to [Your Files](./change_me.html)
 
-## Testing info.php()
-Please run the `info.php` file and test php version and enviroment variables. 
+## Testing info.php
+Please check out the `info.php` file to see the php version and environment variables:
 
-* Click on [PHP Info](/info.php) and run `/opt/www/info.php`
+* Click on [PHP Info](/info.php) to run `/opt/www/info.php`
 
 
 
