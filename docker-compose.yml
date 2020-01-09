@@ -2,10 +2,16 @@ version: '3.4'
 
 services:
   alpine-nginx-with-theia-web-ide-hobo:
-    image: hackinglab/alpine-nginx-with-theia-web-ide:latest
+    image: REGISTRY_BASE_URL/alpine-nginx-with-theia-web-ide:latest
     hostname: 'hobo'
-    user: root
+    environment:
+      - "domainname=idocker.REALM_DOMAIN_SUFFIX"
     labels:
       - "traefik.port=80"
-      - "traefik.frontend.rule=Host:e0.idocker.hacking-lab.com"
+      - "traefik.frontend.rule=Host:hobo.REALM_DOMAIN_SUFFIX"
       - "traefik.protocol=http"
+    env_file:
+      - ./UUID.env
+    volumes:
+      - ./UUID.gn:/goldnugget/UUID.gn
+

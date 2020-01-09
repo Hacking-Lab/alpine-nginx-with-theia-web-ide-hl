@@ -44,7 +44,7 @@ RUN apk add --no-cache --update nginx \
         php7-zip && \
 	rm -rf /var/cache/apk/* && \
 	chown -R nginx:www-data /var/lib/nginx && \
-	chown -R nginx:www-data /opt/www
+	chown -R 2000:2000 /opt/www
 
 
 
