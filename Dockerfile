@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 FROM hackinglab/theia:3.2
+=======
+FROM hackinglab/theia:latest
+>>>>>>> 55e9abf3e5949f273805ea071b9a061b95c6d1dc
 MAINTAINER Ivan Buetler <ivan.buetler@compass-security.com>
 
 User root
