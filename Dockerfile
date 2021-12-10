@@ -1,4 +1,4 @@
-FROM theiaide/theia:next
+FROM hackinglab/theia:3.2
 MAINTAINER Ivan Buetler <ivan.buetler@compass-security.com>
 
 User root
