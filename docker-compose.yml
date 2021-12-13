@@ -1,8 +1,7 @@
 version: '2'
 
 services:
-<<<<<<< HEAD
-  openssh-server: 
+  alpine-nginx-with-theia-web-ide-hobo: 
     build: .
     image: hackinglab/alpine-nginx-with-theia-web-ide:3.2
     environment:
@@ -11,12 +10,3 @@ services:
     - HL_USER_PASSWORD=compass
     ports:
       - "8000:80"
-
-=======
-  alpine-nginx-with-theia-web-ide-hobo:
-    image: hackinglab/alpine-nginx-with-theia-web-ide:latest
-    hostname: 'hobo'
-    user: root
-    ports:
-      - 8000:80
->>>>>>> 55e9abf3e5949f273805ea071b9a061b95c6d1dc
