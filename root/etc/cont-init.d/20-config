@@ -1,4 +1,7 @@
-#!/usr/bin/with-contenv bash
+#!/command/with-contenv bash
+
+whoami
+
 
 # make our folders
 echo "================== make /config =========="
