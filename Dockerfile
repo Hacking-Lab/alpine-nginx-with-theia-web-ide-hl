@@ -7,6 +7,7 @@ User root
 ADD root /
 
 RUN chown -R 2000:2000 /home/theia
+RUN chown -R 2000:2000 /opt/www
 
 # Add s6-overlay
 ENV S6_OVERLAY_VERSION=v3.1.2.1 \
