@@ -1,9 +1,9 @@
 version: '2'
 
 services:
-  alpine-nginx-with-theia-web-ide-hobo: 
+  alpine-nginx-with-theia-web-ide: 
     build: .
-    image: hackinglab/alpine-nginx-with-theia-web-ide:3.2
+    image: hackinglab/alpine-nginx-with-theia-web-ide-hl:3.2
     environment:
     - AUTHOR=e1
     - HL_USER_USERNAME=hacker
