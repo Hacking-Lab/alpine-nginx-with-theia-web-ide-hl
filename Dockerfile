@@ -48,10 +48,10 @@ RUN apk add --no-cache --update nginx \
 
 
 # Expose the ports for nginx
-ENV HOME /home/theia
+ENV HOME=/home/theia
 WORKDIR /home/theia
-ENV SHELL /bin/bash
-ENV USE_LOCAL_GIT true
+ENV SHELL=/bin/bash
+ENV USE_LOCAL_GIT=true
 USER root
 
 EXPOSE 80
