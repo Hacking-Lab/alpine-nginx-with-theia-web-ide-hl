@@ -1,5 +1,5 @@
 FROM hackinglab/theia:3.2
-LABEL maintainer="Ivan Buetler <ivan.buetler@compass-security.com>"
+LABEL maintainer="Ivan Buetler <ivan.buetler@hacking-lab.com>"
 
 User root
 
