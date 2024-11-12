@@ -1,7 +1,7 @@
 FROM hackinglab/theia:3.2
 LABEL maintainer="Ivan Buetler <ivan.buetler@hacking-lab.com>"
 
-User root
+USER root
 
 # Add the files
 ADD root /
