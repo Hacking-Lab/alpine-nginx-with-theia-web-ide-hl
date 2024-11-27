@@ -1,4 +1,3 @@
-version: '2'
 
 services:
   alpine-nginx-with-theia-web-ide: 
