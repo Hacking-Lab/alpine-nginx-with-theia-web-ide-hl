@@ -10,8 +10,7 @@ RUN chown -R 2000:2000 /home/theia
 RUN chown -R 2000:2000 /opt/www
 
 # Add s6-overlay
-ENV S6_OVERLAY_VERSION=v3.1.2.1 \
-    GO_DNSMASQ_VERSION=1.0.7
+ENV S6_OVERLAY_VERSION=v3.2.1.0 
 
 RUN apk add --update --no-cache bind-tools curl libcap bash net-tools openssl pwgen xz && \ 
 	apk upgrade --available && \
